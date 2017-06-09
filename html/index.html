@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        var myMenu;
+        window.onload = function() {
+            myMenu = new SDMenu("my_menu");
+            myMenu.init();
+        };
+        // ]]>
+    </script>
+    <title>EVA</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="figure"><img src="../pictures/figura.png" alt="figura"></div>
+    <header class="header">
+        <h1><a href="index.html"><img src="../pictures/logo.png" alt="logo"></a></h1>
+
+        <div class="nav_left">
+            <ul>
+                <li><a href="#" title="">О нас</a></li>
+                <li><a href="#" title="">Поводы</a></li>
+                <li><a href="#" title="">Гурмэ и подарки</a></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <ul>
+                <li><a href="#" title="">Цветы</a></li>
+                <li><a href="#" title="">Международная доставка</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="left">
+            <div class="nav">
+                <div style="float: left" id="my_menu" class="sdmenu">
+                    <div>
+                        <span>Идея подарков</span>
+                        <a href="#">Свадебный</a>
+                        <a href="#">На день рождения</a>
+                        <a href="#">Для торжественных случаев</a>
+                    </div>
+                    <div>
+                        <span>Выбрать тип букета</span>
+                        <a href="#">Свадебный</a>
+                        <a href="#">На день рождения</a>
+                        <a href="#">Для торжественных случаев</a>
+                    </div>
+                    <div>
+                        <span>Стиль букета</span>
+                        <a href="#">Свадебный</a>
+                        <a href="#">На день рождения</a>
+                        <a href="#">Для торжественных случаев</a>
+                    </div>
+                    <div>
+                        <span>Выбрать цену</span>
+                        <a href="#">Свадебный</a>
+                        <a href="#">На день рождения</a>
+                        <a href="#">Для торжественных случаев</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bouquet">
+                <h3>Выберите букеты:</h3>
+                <div class="foto">
+                    <a href="#"><img src="../pictures/bouquet1.png" alt="bouquet1"></a>
+                    <a href="#"><img src="../pictures/bouquet2.png" alt="bouquet2"></a>
+                    <a href="#"><img src="../pictures/bouquet3.png" alt="bouquet3"></a>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="bigFoto">
+
+                <div id="wrapper">
+                    <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
+                    <input type="radio" name="point" id="slide4">
+                    <input type="radio" name="point" id="slide5">
+                    <div class="slider">
+                        <div class="slides slide1"></div>
+                        <div class="slides slide2"></div>
+                        <div class="slides slide3"></div>
+                        <div class="slides slide4"></div>
+                        <div class="slides slide5"></div>
+                    </div>
+                    <div class="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                        <label for="slide5"></label>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="inform">
+                <form action="" method="post" name="User profile" id="form">
+                    <h2>Шаг первый <b>(информация о получателе)</b></h2>
+                    <div class="form">
+                        <label for="fio">ФИО</label>
+                        <input type="text" name="FIO" id="fio" required placeholder="Обязательно для заполнения">
+                    </div>
+                    <div class="form">
+                        <label for="adress">Адрес доставки</label>
+                        <input type="text" name="adress" id="adress" required placeholder="Обязательно для заполнения">
+                    </div>
+                    <div class="form">
+                        <label for="phone">Телефон</label>
+                        <input type="text" name="phone" id="phone" required placeholder="Обязательно для заполнения">
+                    </div>
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Обязательно для заполнения">
+                    </div>
+                    <div class="form">
+                        <button type="submit" name="inter" id="save">Отправить</button>
+                    </div>
+
+                </form>
+                <div class="one"><img src="../pictures/forbutton.png" alt="one"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="form" id="fieldset">
+                <fieldset>
+                    <div>
+                        <input id="minPrice" type="radio" name="price" value="minPrice" >
+                        <label for="minPrice">€ 27,00  Небольшой, но красивый</label>
+                    </div>
+                    <div>
+                        <input id="middlePrice" type="radio" name="price" value="middlePrice" >
+                        <label for="middlePrice">€ 35,00  Золотая середина</label>
+                    </div>
+                    <div>
+                        <input id="maxPrice" type="radio" name="price" value="maxPrice" >
+                        <label for="maxPrice">€ 55,00  Роскошный</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="description">
+                <h2>Состав букета:</h2>
+                <div><span>5 Лилий, 6 альстромерий, 3 аспарагус виргатус, упаковка, зелень.</span></div>
+            </div>
+            <div class="bouquetText">
+                <h3>Выберите букеты:</h3>
+                <div class="bouquetTextImportent">
+                        <div><span> Букет цветов – универсальный подарок к любому празднику! Согласитесь, цветы – это универсальный подарок!
+                        Букеты с цветами дарят на день рождения, Восьмое марта и первое сентября, на свадебное торжество и юбилей,
+                        на Новый Год и день Святого Валентина. Одним словом, получать цветы приятно всем, а если букет цветов
+                        подарил любимый</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
